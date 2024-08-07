@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>儀表板</title>
+  <link rel="stylesheet" href="..\style\main-styles.css">
+</head>
+<body>
+  <div class="p-4">
+    <h1 class="text-2xl font-bold mb-4">學校管理系統儀表板</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- 用戶個人訊息 -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">個人訊息</h2>
+        </div>
+        <div class="card-content">
+          <p>歡迎回來，Abisu！</p>
+          <p>角色：<span id="userRole">學生</span></p>
+        </div>
+      </div>
+
+      <!-- 教室活動一覽 -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">課表</h2>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li>9:10 - 12:00 演算法</li>
+            <li>13:10 - 16:00 程式設計</li>
+            <li>18:10 - 20:40 日文</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 快捷導航 -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">快捷導航</h2>
+        </div>
+        <div class="card-content">
+          <div class="flex flex-wrap gap-2">
+            <button class="p-2 bg-blue-500 text-white rounded"><i class="icon-home"></i> 首頁</button>
+            <button class="p-2 bg-green-500 text-white rounded"><i class="icon-bell"></i> 公告</button>
+            <button class="p-2 bg-yellow-500 text-white rounded"><i class="icon-check-square"></i> 出勤</button>
+            <button class="p-2 bg-purple-500 text-white rounded"><i class="icon-settings"></i> 設置</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主要功能區 -->
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold mb-4">功能區</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <!-- 活動管理 -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">活動管理</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>預覽公告</li>
+              <li>創建公告</li>
+              <li>修改公告</li>
+              <li>刪除公告</li>
+              <li>公告行事曆</li>
+            </ul>
+          </div>
+        </div>
+
+          <!-- 活動管理 -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">資訊管理</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>講義</li>
+              <li>視頻</li>
+              <li>作業</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 出勤紀錄 -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">出勤紀錄</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>點名</li>
+              <li>學生列表</li>
+              <li>出勤統計</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 用戶管理 -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">用戶管理</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>用戶列表</li>
+              <li>權限設置</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 設置 -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">設置</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>個人設置</li>
+              <li>系統設置</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 幫助和支持 -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">幫助和支持</h2>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>常見問題</li>
+              <li>聯繫我們</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="..\json\main-scripts.js"></script>
+</body>
+</html>

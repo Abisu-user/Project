@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <link rel="stylesheet" href="..\style\lg-styles.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tabs-list">
+            <div class="tabs-trigger" data-tab="login">登入</div>
+            <div class="tabs-trigger" data-tab="register">註冊</div>
+        </div>
+        <div id="login" class="tabs-content">
+
+             <!-- 登入模態框 -->
+            <h2>登入</h2>
+            <form id="login-form">
+                <input type="hidden" name="action" value="login">
+                <select id="login-role" name="actor" required>
+                    <option value="student">學生</option>
+                    <option value="teacher">教師</option>
+                    <option value="admin">管理員</option>
+                </select>
+                <input type="text" id="student-id-login" name="st_number" placeholder="學號">
+                <input type="text" id="teacher-id-login" name="th_number" placeholder="教師編號" class="hidden">
+                <input type="text" id="admin-id-login" name="ad_number" placeholder="管理員ID" class="hidden">
+                <input type="password" name="pwd" placeholder="密碼" required>
+                <p id="login-msg" style="color:red"></p>
+                <button type="submit">登入</button>
+            </form>
+        </div>
+        <div id="register" class="tabs-content">
+
+            <!-- 註冊模態框 -->
+            <h2>註冊</h2>
+            <form id="register-form">
+                <input type="hidden" name="action" value="register">
+                <select id="register-role" name="actor" required>
+                    <option value="student">學生</option>
+                    <option value="teacher">教師</option>
+                    <option value="admin">管理員</option>
+                </select>
+                <input type="text" id="student-id-register" name="st_number" placeholder="學號">
+                <input type="text" id="teacher-id-register" name="th_number" placeholder="教師編號" class="hidden">
+                <input type="text" id="admin-id-register" name="ad_number" placeholder="管理員ID" class="hidden">
+                <input type="text" name="username" placeholder="姓名" required>
+                <select id="sex-role" name="sex" required>
+                    <option value="M">男</option>
+                    <option value="F">女</option>
+                    <option value="O">其他</option>
+                </select>
+                <input type="email" name="mail" placeholder="電子郵件" required>
+                <input type="tel" name="phone" placeholder="手機號碼" required>
+                <input type="address" name="address" placeholder="地址" required>
+                <input type="date" name="birth_date" placeholder="生日" required>
+                <input type="password" id="pwd" name="pwd" placeholder="密碼" required>
+                <div id="strength-bar"><span></span></div>
+                <input type="password" id="curretpwd" name="curretpwd" placeholder="確認密碼" required>
+                <p id="register-msg" style="color:red"></p>
+                <button type="submit" id="register-submit">註冊</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="..\json\lg-scripts.js"></script>
+
+</body>
+</html>
